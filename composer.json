@@ -1,6 +1,6 @@
 {
     "name": "creode/get-address-lookup",
-    "description": "Uses the Get Address.io postcode lookup library to generate address information",
+    "description": "Allows you to add getaddress.io postcode lookup fields to your website.",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [
@@ -22,12 +22,14 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0"
+        "craftcms/cms": "^3.6"
     },
     "require-dev": {
-      "craftcms/cms": "^3.2.0",
-      "codeception/codeception": "^3.0",
-      "vlucas/phpdotenv": "^3.0"
+        "codeception/codeception": "^4.0",
+        "vlucas/phpdotenv": "^3.4",
+        "codeception/module-yii2": "^1.1",
+        "codeception/module-asserts": "^1.3",
+        "marcocesarato/php-conventional-changelog": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -39,8 +41,8 @@
         "handle": "get-address-lookup",
         "developer": "Creode",
         "developerUrl": "https://www.creode.co.uk",
-        "documentationUrl": "https://github.com/creode/get-address-lookup/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/creode/get-address-lookup/master/CHANGELOG.md",
+        "documentationUrl": "https://github.com/creode/get-address-lookup/blob/1.x/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/creode/get-address-lookup/1.x/CHANGELOG.md",
         "components": {
             "addressLookup": "creode\\getaddresslookup\\services\\AddressLookup"
         },

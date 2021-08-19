@@ -30,3 +30,9 @@
 !.vscode/extensions.json
 config.codekit3
 prepros-6.config
+
+# TEST CACHING / LOGGING
+tests/_craft/config/project/*
+tests/_craft/storage/*
+tests/_output/*
+tests/_support/_generated/*

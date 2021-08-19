@@ -20,7 +20,7 @@ use craft\web\Controller;
  * @package   GetAddressLookup
  * @since     1.0.0
  */
-class AjaxControllerController extends Controller
+class AjaxController extends Controller
 {
 
     // Protected Properties
@@ -41,7 +41,7 @@ class AjaxControllerController extends Controller
      */
     public function actionIndex()
     {
-        $result = 'Welcome to the AjaxControllerController actionIndex() method';
+        $result = 'Welcome to the AjaxController actionIndex() method';
 
         return $result;
     }
@@ -51,7 +51,7 @@ class AjaxControllerController extends Controller
      */
     public function actionDoSomething()
     {
-        $result = 'Welcome to the AjaxControllerController actionDoSomething() method';
+        $result = 'Welcome to the AjaxController actionDoSomething() method';
 
         return $result;
     }
