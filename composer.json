@@ -1,0 +1,49 @@
+{
+    "name": "creode/get-address-lookup",
+    "description": "Uses the Get Address.io postcode lookup library to generate address information",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "get address lookup"
+    ],
+    "support": {
+        "docs": "https://github.com/creode/get-address-lookup/blob/master/README.md",
+        "issues": "https://github.com/creode/get-address-lookup/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Creode",
+            "homepage": "https://www.creode.co.uk"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "creode\\getaddresslookup\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Get Address Lookup",
+        "handle": "get-address-lookup",
+        "developer": "Creode",
+        "developerUrl": "https://www.creode.co.uk",
+        "documentationUrl": "https://github.com/creode/get-address-lookup/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/creode/get-address-lookup/master/CHANGELOG.md",
+        "components": {
+            "addressLookup": "creode\\getaddresslookup\\services\\AddressLookup"
+        },
+        "class": "creode\\getaddresslookup\\GetAddressLookup"
+    }
+}

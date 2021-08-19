@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Get Address Lookup plugin for Craft CMS
+ *
+ * GetAddressLookups Widget Settings
+ *
+ * @author    Creode
+ * @copyright Copyright (c) 2021 Creode
+ * @link      https://www.creode.co.uk
+ * @package   GetAddressLookup
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("creode\\getaddresslookup\\assetbundles\\getaddresslookup\\GetAddressLookupAsset") %}
+
+{{ forms.textField({
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
+}}
